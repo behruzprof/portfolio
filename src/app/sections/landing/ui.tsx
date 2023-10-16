@@ -3,7 +3,7 @@ import { IconArrowDown } from '@tabler/icons-react'
 
 export const Landing = () => {
   return (
-    <AppShell.Section h='80vh' py='20px'>
+    <AppShell.Section h='98vh' py='20px'>
       <Flex w='100%' h='100%' justify='center' align='center'>
         <Flex
           w='450px'

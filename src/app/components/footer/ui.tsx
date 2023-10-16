@@ -3,7 +3,7 @@ import { IconBrandGithub, IconFile } from '@tabler/icons-react'
 
 export const Footer = () => {
   return (
-    <AppShell.Footer>
+    <AppShell.Footer pos='static'>
       <Container size='lg' py='md'>
         <Flex justify='center' direction='column' align='center' rowGap='sm'>
           <Anchor
