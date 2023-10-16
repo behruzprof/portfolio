@@ -24,8 +24,8 @@ export const Header = () => {
   const isDark = computedColorScheme === 'dark'
 
   return (
-    <AppShell.Header>
-      <Container size='lg' display={'flex'}>
+    <AppShell.Header pos='sticky'>
+      <Container size='lg'>
         <Flex w='100%' gap='md' justify='space-between' align='center'>
           <Box w={'max-content'}>
             <NavLink
