@@ -1,20 +1,9 @@
-import { Anchor, AppShell, Flex, Image, Mark, Text, Title } from '@mantine/core'
+import { Anchor, Flex, Image, Mark, Text } from '@mantine/core'
+import { SectionContainer } from '@/app/components'
 
 export const About = () => {
   return (
-    <AppShell.Section>
-      <Title
-        order={2}
-        mb='xl'
-        styles={{
-          root: {
-            textAlign: 'center'
-          }
-        }}
-      >
-        About Me
-      </Title>
-
+    <SectionContainer title='About Me'>
       <Flex
         w='100%'
         justify='space-between'
@@ -24,7 +13,7 @@ export const About = () => {
       >
         <Text
           maw={{ base: '80%', md: '450px' }}
-          miw='300px'
+          miw='290px'
           styles={{
             root: {}
           }}
@@ -32,7 +21,7 @@ export const About = () => {
           Hi, I'm Jarrod! I studied <Mark color='blue'>Full Stack </Mark> at the{' '}
           <Anchor href='https://proweb.uz' target='_blank'>
             Proweb.uz
-          </Anchor>
+          </Anchor>{' '}
           learning center, and I'm currently practicing and looking for a job.
           Prior to that, I worked at{' '}
           <Anchor href='https://proweb.uz' target='_blank'>
@@ -59,11 +48,12 @@ export const About = () => {
         <Image
           ml={0}
           radius='xs'
-          w={400}
+          w={{ base: 290, md: 400 }}
           fit='contain'
+          alt='me'
           src='https://images.unsplash.com/photo-1688920556232-321bd176d0b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80'
         />
       </Flex>
-    </AppShell.Section>
+    </SectionContainer>
   )
 }
