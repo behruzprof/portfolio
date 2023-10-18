@@ -1,7 +1,7 @@
 import { AppShell, Container } from '@mantine/core'
 
 import { Footer, Header } from './components'
-import { About, Experience, Landing } from './sections'
+import { About, Experience, Landing, Projects } from './sections'
 
 import './styles/index.scss'
 
@@ -14,6 +14,7 @@ export const App = () => {
           <Landing />
           <About />
           <Experience />
+          <Projects />
         </Container>
       </AppShell.Main>
       <Footer />
