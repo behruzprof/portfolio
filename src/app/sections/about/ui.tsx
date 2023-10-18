@@ -3,7 +3,7 @@ import { SectionContainer } from '@/app/components'
 
 export const About = () => {
   return (
-    <SectionContainer title='About Me'>
+    <SectionContainer title='About Me' styles={{ marginTop: '0' }}>
       <Flex
         w='100%'
         justify='space-between'
@@ -11,13 +11,7 @@ export const About = () => {
         gap='sm'
         direction={{ base: 'column', md: 'row' }}
       >
-        <Text
-          maw={{ base: '80%', md: '450px' }}
-          miw='290px'
-          styles={{
-            root: {}
-          }}
-        >
+        <Text maw={{ base: '80%', md: '450px' }} miw='290px'>
           Hi, I'm Jarrod! I studied <Mark color='blue'>Full Stack </Mark> at the{' '}
           <Anchor href='https://proweb.uz' target='_blank'>
             Proweb.uz

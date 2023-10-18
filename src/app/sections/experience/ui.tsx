@@ -6,7 +6,7 @@ import { Anchor, Box, Flex, List, Tabs, Text, Title } from '@mantine/core'
 export const Experience = () => {
   const { md } = useCustomMediaQuery()
   return (
-    <SectionContainer title='Experience' styles={{ marginTop: '20px' }}>
+    <SectionContainer title='Experience'>
       <Box maw={'700px'} w='100%' my='lg'>
         <Tabs
           defaultValue={JOBS[0].workplace}

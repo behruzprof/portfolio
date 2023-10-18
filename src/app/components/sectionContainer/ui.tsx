@@ -12,7 +12,7 @@ export const SectionContainer = ({
   children
 }: SectionContainer & PropsWithChildren) => {
   return (
-    <AppShell.Section styles={{ section: styles }}>
+    <AppShell.Section styles={{ section: styles }} mt='lg'>
       <Flex direction='column' align='center' justify='center' rowGap='xl'>
         <Title order={2} styles={{ root: { textAlign: 'center' } }}>
           {title}

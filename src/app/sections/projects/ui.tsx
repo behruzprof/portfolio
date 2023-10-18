@@ -6,7 +6,7 @@ import { PROJECTS } from '@/data/projects'
 
 export const Projects = () => {
   return (
-    <SectionContainer title='Featured Projects' styles={{ marginTop: '20px' }}>
+    <SectionContainer title='Featured Projects'>
       <Flex direction='column' rowGap='md'>
         {PROJECTS.map((project, idx) => (
           <ProjectCard
