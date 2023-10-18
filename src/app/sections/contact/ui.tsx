@@ -1,5 +1,5 @@
 import { SectionContainer } from '@/app/components'
-import { Button, Divider, Flex, Text } from '@mantine/core'
+import { Button, Flex, Text } from '@mantine/core'
 import { IconMail } from '@tabler/icons-react'
 
 export const Contact = () => {
