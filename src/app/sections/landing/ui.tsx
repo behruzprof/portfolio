@@ -1,7 +1,26 @@
+import { useEffect, useRef } from 'react'
+import { gsap } from 'gsap'
 import { AppShell, Button, Flex, Mark, Text, Title } from '@mantine/core'
 import { IconArrowDown } from '@tabler/icons-react'
+interface LandingProps {
+  onClick: () => void
+}
 
-export const Landing = () => {
+gsap.registerPlugin({})
+
+export const Landing = ({ onClick }: LandingProps) => {
+  const buttonRef = useRef<HTMLButtonElement>(null)
+
+  useEffect(() => {
+    if (buttonRef.current) {
+      gsap.to(buttonRef.current, {
+        y: 20,
+        yoyo: true,
+        repeat: -1
+      })
+    }
+  }, [])
+
   return (
     <AppShell.Section h='98vh' py='20px'>
       <Flex w='100%' h='100%' justify='center' align='center'>
@@ -31,7 +50,7 @@ export const Landing = () => {
           >
             Learn More
           </Text>
-          <Button variant='subtle'>
+          <Button ref={buttonRef} variant='subtle' onClick={onClick}>
             <IconArrowDown />
           </Button>
         </Flex>

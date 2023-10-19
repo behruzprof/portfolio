@@ -1,18 +1,17 @@
 import { AppShell, Flex, Title } from '@mantine/core'
-import { CSSProperties, PropsWithChildren } from 'react'
+import { CSSProperties, PropsWithChildren, forwardRef } from 'react'
 
-interface SectionContainer {
+interface SectionContainerProps {
   title: string
   styles?: CSSProperties
 }
 
-export const SectionContainer = ({
-  title,
-  styles,
-  children
-}: SectionContainer & PropsWithChildren) => {
+export const SectionContainer = forwardRef<
+  HTMLDivElement,
+  SectionContainerProps & PropsWithChildren
+>(({ title, styles, children }, ref) => {
   return (
-    <AppShell.Section styles={{ section: styles }} mt='lg'>
+    <AppShell.Section styles={{ section: styles }} mt='lg' ref={ref}>
       <Flex direction='column' align='center' justify='center' rowGap='xl'>
         <Title order={2} styles={{ root: { textAlign: 'center' } }}>
           {title}
@@ -21,4 +20,4 @@ export const SectionContainer = ({
       </Flex>
     </AppShell.Section>
   )
-}
+})

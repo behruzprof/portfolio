@@ -20,60 +20,60 @@ interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    name: 'ULinks.io',
+    name: 'Bictory.domains',
     description:
       'ULinks.io is a platform for students to browse & upload academic group chats to stay connected during online school',
-    pic: 'https://randomwordgenerator.com/img/picture-generator/57e3d74a4a54ad14f1dc8460962e33791c3ad6e04e5074417c2f7dd59549c1_640.jpg',
-    tech: ['React', 'GraphQL', 'Node.js'],
-    links: [
-      {
-        label: 'Github',
-        icon: 'github',
-        url: 'https://github.com/jcserv/ulinks'
-      }
-    ]
-  },
-  {
-    name: 'UTM TA Application System',
-    description:
-      'UTAP is the official platform for all MCS TA postings @ UTM enabling students and instructors to apply for postings and manage applications.',
-    pic: 'https://randomwordgenerator.com/img/picture-generator/57e3d74a4a54ad14f1dc8460962e33791c3ad6e04e5074417c2f7dd59549c1_640.jpg',
-    tech: ['React', 'Node.js'],
+    pic: '/projects-img/project-1.png',
+    tech: ['Nextjs', 'Fsd Architecture', 'MUI library'],
     links: [
       {
         label: 'Website',
         icon: 'link',
-        url: 'https://utap.utm.utoronto.ca/utap/'
-      }
-    ]
-  },
-  {
-    name: 'PostureAI',
-    description:
-      'PostureAI is an AI powered posture improvement web app, used by 200 monthly active users, that helps you maintain healthy posture while working.',
-    subtitle: '1st Place in Best Use of GCP',
-    pic: 'https://randomwordgenerator.com/img/picture-generator/57e3d74a4a54ad14f1dc8460962e33791c3ad6e04e5074417c2f7dd59549c1_640.jpg',
-    tech: ['React', 'TypeScript'],
-    links: [
-      {
-        label: 'Website',
-        icon: 'link',
-        url: 'https://postureai.tech/'
+        url: 'https://bictory.domains/'
       },
       {
         label: 'Github',
         icon: 'github',
-        url: 'https://github.com/jcserv/PostureAI'
+        url: 'https://github.com/behruzprof/bictory.domains'
+      }
+    ]
+  },
+  {
+    name: 'X-NAMES-LANDING-DAPP',
+    description:
+      'UTAP is the official platform for all MCS TA postings @ UTM enabling students and instructors to apply for postings and manage applications.',
+    pic: '/projects-img/project-2.png',
+    tech: ['React', 'Vite', 'MUI library', 'Redux Toolkit/Redux Saga'],
+    links: [
+      {
+        label: 'Github',
+        icon: 'github',
+        url: 'https://github.com/behruzprof/x-names-landing-dapp'
+      }
+    ]
+  },
+  {
+    name: 'Bictory NFT',
+    description:
+      'PostureAI is an AI powered posture improvement web app, used by 200 monthly active users, that helps you maintain healthy posture while working.',
+    subtitle: '1st Place in Best Use of GCP',
+    pic: '/projects-img/project-3.png',
+    tech: ['React', 'TypeScript', 'i18next', 'gsap', 'Redux Toolkit/Redux Saga' ],
+    links: [
+      {
+        label: 'Website',
+        icon: 'link',
+        url: 'https://bictory.io/'
+      },
+      {
+        label: 'Github',
+        icon: 'github',
+        url: 'https://github.com/behruzprof/bictory-nft'
       },
       {
         label: 'Demo',
         icon: 'youtube',
-        url: 'https://www.youtube.com/watch?v=SqUmP6npKYM'
-      },
-      {
-        label: 'Devpost',
-        icon: 'devpost',
-        url: 'https://devpost.com/software/placeholder-9gjdst'
+        url: 'https://www.youtube.com/watch?v=PJb_5QpC-NE'
       }
     ]
   }

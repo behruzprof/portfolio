@@ -1,9 +1,10 @@
 import { Anchor, Flex, Image, Mark, Text } from '@mantine/core'
 import { SectionContainer } from '@/app/components'
+import { forwardRef } from 'react'
 
-export const About = () => {
+export const About = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <SectionContainer title='About Me' styles={{ marginTop: '0' }}>
+    <SectionContainer title='About Me' styles={{ marginTop: '0' }} ref={ref}>
       <Flex
         w='100%'
         justify='space-between'
@@ -45,9 +46,9 @@ export const About = () => {
           w={{ base: 290, md: 400 }}
           fit='contain'
           alt='me'
-          src='https://images.unsplash.com/photo-1688920556232-321bd176d0b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80'
+          src='/about.jpg'
         />
       </Flex>
     </SectionContainer>
   )
-}
+})

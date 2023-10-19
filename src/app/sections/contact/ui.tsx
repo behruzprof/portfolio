@@ -10,7 +10,13 @@ export const Contact = () => {
           Whether it's a job opportunity, an invite to coffee, or feedback on my
           portfolio, my inbox is open!
         </Text>
-        <Button variant='gradient' w='max-content' leftSection={<IconMail />}>
+        <Button
+          component='a'
+          href='mailto:whitestar06102005@gmail.com'
+          variant='gradient'
+          w='max-content'
+          leftSection={<IconMail />}
+        >
           SendEmail
         </Button>
       </Flex>
