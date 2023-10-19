@@ -1,12 +1,10 @@
 import { Flex } from '@mantine/core'
 
-import { SectionContainer } from '@/app/components'
 import { ProjectCard } from './ProjectCard'
 import { PROJECTS } from '@/data/projects'
 
 export const Projects = () => {
   return (
-    <SectionContainer title='Featured Projects'>
       <Flex direction='column' rowGap='md'>
         {PROJECTS.map((project, idx) => (
           <ProjectCard
@@ -16,6 +14,5 @@ export const Projects = () => {
           />
         ))}
       </Flex>
-    </SectionContainer>
   )
 }

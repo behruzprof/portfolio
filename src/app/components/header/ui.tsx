@@ -4,24 +4,18 @@ import {
   Box,
   Container,
   Text,
-  useMantineColorScheme,
-  useComputedColorScheme,
   Flex,
-  Anchor,
-  ActionIcon
 } from '@mantine/core'
-import { IconCode, IconSun, IconMoon } from '@tabler/icons-react'
-import { NavMenu } from './NavMenu'
+import { IconCode } from '@tabler/icons-react'
+
+import { Burger } from './Burger'
 import { useCustomMediaQuery } from '@/app/hooks/useCustomMediaQuery'
+import { ActionTheme } from './ActionTheme'
+import { Links } from './Links'
 
 export const Header = () => {
-  const { setColorScheme } = useMantineColorScheme()
-  const computedColorScheme = useComputedColorScheme('light', {
-    getInitialValueInEffect: true
-  })
-  const { xs } = useCustomMediaQuery()
 
-  const isDark = computedColorScheme === 'dark'
+  const { xs } = useCustomMediaQuery()
 
   return (
     <AppShell.Header pos='sticky'>
@@ -38,21 +32,11 @@ export const Header = () => {
           </Box>
           {xs ? (
             <Flex align='center' columnGap='sm'>
-              <Anchor>About me</Anchor>
-              <Anchor>Experience</Anchor>
-              <Anchor>Projects</Anchor>
-              <Anchor>Contact</Anchor>
-              <ActionIcon
-                onClick={() => setColorScheme(isDark ? 'light' : 'dark')}
-                variant='subtle'
-                size='xl'
-                aria-label='Toggle color scheme'
-              >
-                {isDark ? <IconSun size='23px' /> : <IconMoon size='23px' />}
-              </ActionIcon>
+              <Links />
+              <ActionTheme />
             </Flex>
           ) : (
-            <NavMenu />
+            <Burger />
           )}
         </Flex>
       </Container>
