@@ -3,6 +3,7 @@ import { IconArrowDown } from '@tabler/icons-react'
 import { useFromToAnimate } from '@/app/hooks/useFromToAnimate'
 import { gsap } from 'gsap'
 import { useEffect, useRef } from 'react'
+import { scroller } from 'react-scroll'
 
 
 export const Landing = () => {
@@ -26,6 +27,7 @@ export const Landing = () => {
   }, [])
 
   return (
+
     <AppShell.Section h='98vh' py='20px'>
       <Flex w='100%' h='100%' justify='center' align='center'>
         <Flex
@@ -56,7 +58,14 @@ export const Landing = () => {
           >
             Learn More
           </Text>
-          <Button ref={buttonRef} variant='subtle'>
+          <Button
+            ref={buttonRef}
+            variant='subtle'
+            onClick={() => scroller.scrollTo('about-me', {
+              offset: -70,
+              smooth: true
+            })}
+          >
             <IconArrowDown />
           </Button>
         </Flex>
