@@ -7,10 +7,8 @@ import './styles/index.scss'
 
 export const App = () => {
 
-
-
   return (
-    <AppShell>
+    <AppShell styles={{ root: { overflow: 'hidden' } }}>
       <Header />
       <AppShell.Main>
         <Container size='lg'>
