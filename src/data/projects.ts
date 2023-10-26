@@ -76,5 +76,25 @@ export const PROJECTS: Project[] = [
         url: 'https://www.youtube.com/watch?v=PJb_5QpC-NE'
       }
     ]
+  },
+  {
+    name: 'Bictory CNS',
+    description:
+      'PostureAI is an AI powered posture improvement web app, used by 200 monthly active users, that helps you maintain healthy posture while working.',
+    subtitle: '1st Place in Best Use of GCP',
+    pic: '/projects-img/project-4.webp',
+    tech: ['React', 'TypeScript', 'i18next', 'MUI library'],
+    links: [
+      {
+        label: 'Demo',
+        icon: 'youtube',
+        url: 'https://youtu.be/Ykt4VdsKH8A'
+      },
+      {
+        label: 'Github',
+        icon: 'github',
+        url: 'https://github.com/behruzprof/bictory-cns'
+      },
+    ]
   }
 ]
