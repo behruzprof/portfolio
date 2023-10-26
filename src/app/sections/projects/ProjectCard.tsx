@@ -86,7 +86,7 @@ export const ProjectCard = ({
             })}
           </Flex>
         </Card>
-        <Flex columnGap='sm' justify='center'>
+        <Flex columnGap='sm' justify='center' wrap='wrap' rowGap='xs'>
           {tech.map((item) => (
             <Code key={item}>{item}</Code>
           ))}
