@@ -56,7 +56,7 @@ export const PROJECTS: Project[] = [
     name: 'Bictory NFT',
     description:
       'Our NFT marketplace project is built on the permissionless L1 Concordium blockchain which is fitted with a zK ID-layer, offering a unique opportunity for privacy and at the same time accountability for individuals and businesses looking to enter the rapidly growing NFT market.',
-    pic: '/projects-img/project-3.jpg',
+    pic: '/projects-img/project-3.png',
     tech: ['React', 'TypeScript', 'i18next', 'gsap'],
     links: [
       {
