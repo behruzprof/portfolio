@@ -3,11 +3,9 @@ import { IconArrowDown } from '@tabler/icons-react'
 import { useFromToAnimate } from '@/app/hooks/useFromToAnimate'
 import { gsap } from 'gsap'
 import { useEffect, useRef } from 'react'
-interface LandingProps {
-  onClick: () => void
-}
 
-export const Landing = ({ onClick }: LandingProps) => {
+
+export const Landing = () => {
   const { ref: titleRef } = useFromToAnimate<HTMLHeadingElement>()
   const { ref: textRef } = useFromToAnimate<HTMLHeadingElement>({
     from: {
@@ -22,7 +20,7 @@ export const Landing = ({ onClick }: LandingProps) => {
       gsap.timeline({ repeat: -1, yoyo: true }).to(buttonRef.current, {
         y: 20,
         duration: 0.3,
-        ease: 'power1.inOut' // Easing function for smooth animation
+        ease: 'power1.inOut'
       })
     }
   }, [])
@@ -58,7 +56,7 @@ export const Landing = ({ onClick }: LandingProps) => {
           >
             Learn More
           </Text>
-          <Button ref={buttonRef} variant='subtle' onClick={onClick}>
+          <Button ref={buttonRef} variant='subtle'>
             <IconArrowDown />
           </Button>
         </Flex>

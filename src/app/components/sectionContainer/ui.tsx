@@ -1,5 +1,8 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+import { CSSProperties, PropsWithChildren } from 'react'
 import { AppShell, Flex, Title } from '@mantine/core'
-import { CSSProperties, PropsWithChildren, forwardRef } from 'react'
+import { ScrollElement, ScrollElementProps } from 'react-scroll';
+
 import { useFromToAnimate } from '@/app/hooks/useFromToAnimate';
 interface SectionContainerProps {
   title: string,
@@ -8,10 +11,7 @@ interface SectionContainerProps {
 }
 
 
-export const SectionContainer = forwardRef<
-  HTMLDivElement,
-  SectionContainerProps & PropsWithChildren
->(({ title, styles, animationReversed = false, children }, ref) => {
+export const SectionContainer = ScrollElement(({ title, styles, animationReversed = false, children, ...props }: ScrollElementProps<SectionContainerProps & PropsWithChildren>) => {
   const { ref: sectionRef, isOnScreen } = useFromToAnimate<HTMLDivElement>({
     from: {
       x: animationReversed ? "120%" : "-120%",
@@ -23,9 +23,9 @@ export const SectionContainer = forwardRef<
       ease: "back",
     }
   })
-
   return (
-    <AppShell.Section styles={{ section: styles }} mt='lg' ref={ref}>
+    // @ts-ignore
+    <AppShell.Section styles={{ section: styles }} mt='lg' ref={(el) => { props.parentBindings.domNode = el; }}>
       <Flex direction='column' align='center' justify='center' rowGap='xl' ref={sectionRef} styles={{
         root: {
           opacity: isOnScreen ? '1' : '0'

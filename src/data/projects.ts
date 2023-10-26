@@ -43,7 +43,7 @@ export const PROJECTS: Project[] = [
     description:
       'UTAP is the official platform for all MCS TA postings @ UTM enabling students and instructors to apply for postings and manage applications.',
     pic: '/projects-img/project-2.png',
-    tech: ['React', 'Vite', 'MUI library', 'Redux Toolkit/Redux Saga'],
+    tech: ['React', 'Vite', 'MUI library'],
     links: [
       {
         label: 'Github',
@@ -58,7 +58,7 @@ export const PROJECTS: Project[] = [
       'PostureAI is an AI powered posture improvement web app, used by 200 monthly active users, that helps you maintain healthy posture while working.',
     subtitle: '1st Place in Best Use of GCP',
     pic: '/projects-img/project-3.png',
-    tech: ['React', 'TypeScript', 'i18next', 'gsap', 'Redux Toolkit/Redux Saga' ],
+    tech: ['React', 'TypeScript', 'i18next', 'gsap'],
     links: [
       {
         label: 'Website',
