@@ -7,7 +7,7 @@ import {themes} from '@/app';
 export const Providers = () => {
   return (
     <StrictMode>
-      <MantineProvider theme={themes}>
+      <MantineProvider theme={themes.mantineTheme}>
         <App />
       </MantineProvider>
     </StrictMode>
