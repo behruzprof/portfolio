@@ -10,7 +10,7 @@ export const About = () => {
       direction={{ base: 'column', md: 'row' }}
     >
       <Text maw={{ base: '80%', md: '450px' }} miw='290px'>
-        Hi, I'm Jarrod! I studied <Mark color='blue'>Full Stack </Mark> at the{' '}
+        Hi, I'm Behruz! I studied <Mark color='blue'>Full Stack </Mark> at the{' '}
         <Anchor href='https://proweb.uz' target='_blank'>
           Proweb.uz
         </Anchor>{' '}

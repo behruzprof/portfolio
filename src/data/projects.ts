@@ -22,7 +22,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'Bictory.domains',
     description:
-      'ULinks.io is a platform for students to browse & upload academic group chats to stay connected during online school',
+      'Bictory Domains is a distributed, secure, and extensible naming system for Web3, based on the L1 and L2 blockchains. Bictory Domains empowers users to map human-readable names to blockchain identities and resources such as Multiversx addresses and identities, IPFS hashes, texts, socials, web URLs and so much more.',
     pic: '/projects-img/project-1.png',
     tech: ['Nextjs', 'Fsd Architecture', 'MUI library'],
     links: [
@@ -41,7 +41,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'X-NAMES-LANDING-DAPP',
     description:
-      'UTAP is the official platform for all MCS TA postings @ UTM enabling students and instructors to apply for postings and manage applications.',
+      'xNames are a necessary resource to fully decentralize your website. Link the wallet name to your decentrally hosted website to resist censorship. All Dapps across the MultiversX, your xNames serves as the user and screen names for more dapp usability.',
     pic: '/projects-img/project-2.png',
     tech: ['React', 'Vite', 'MUI library'],
     links: [
@@ -55,9 +55,8 @@ export const PROJECTS: Project[] = [
   {
     name: 'Bictory NFT',
     description:
-      'PostureAI is an AI powered posture improvement web app, used by 200 monthly active users, that helps you maintain healthy posture while working.',
-    subtitle: '1st Place in Best Use of GCP',
-    pic: '/projects-img/project-3.png',
+      'Our NFT marketplace project is built on the permissionless L1 Concordium blockchain which is fitted with a zK ID-layer, offering a unique opportunity for privacy and at the same time accountability for individuals and businesses looking to enter the rapidly growing NFT market.',
+    pic: '/projects-img/project-3.webp',
     tech: ['React', 'TypeScript', 'i18next', 'gsap'],
     links: [
       {
@@ -73,15 +72,14 @@ export const PROJECTS: Project[] = [
       {
         label: 'Demo',
         icon: 'youtube',
-        url: 'https://www.youtube.com/watch?v=PJb_5QpC-NE'
+        url: 'https://youtu.be/PJb_5QpC-NE'
       }
     ]
   },
   {
     name: 'Bictory CNS',
     description:
-      'PostureAI is an AI powered posture improvement web app, used by 200 monthly active users, that helps you maintain healthy posture while working.',
-    subtitle: '1st Place in Best Use of GCP',
+      'The Concordium Name Service (CNS) is a decentralized, open, and multi-utility wallet naming system based on the Self-Sovereign ID Professional Blockchain, Concordium. It maps human-readable and memorable names to hexadecimal wallet addresses for better usability similar to what DNS did for IP addresses.',
     pic: '/projects-img/project-4.webp',
     tech: ['React', 'TypeScript', 'i18next', 'MUI library'],
     links: [
@@ -94,7 +92,7 @@ export const PROJECTS: Project[] = [
         label: 'Github',
         icon: 'github',
         url: 'https://github.com/behruzprof/bictory-cns'
-      },
+      }
     ]
   }
 ]
