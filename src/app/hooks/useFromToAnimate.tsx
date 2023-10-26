@@ -47,7 +47,7 @@ export const useFromToAnimate = <T extends HTMLElement>({
       {
         root: null,
         rootMargin: '0px',
-        threshold: 0,
+        threshold: 0.3,
       },
     );
 

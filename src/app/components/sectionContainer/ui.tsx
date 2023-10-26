@@ -14,7 +14,7 @@ interface SectionContainerProps {
 export const SectionContainer = ScrollElement(({ title, styles, animationReversed = false, children, ...props }: ScrollElementProps<SectionContainerProps & PropsWithChildren>) => {
   const { ref: sectionRef, isOnScreen } = useFromToAnimate<HTMLDivElement>({
     from: {
-      x: animationReversed ? "120%" : "-120%",
+      x: animationReversed ? "50%" : "-50%",
       y: 0
     },
     to: {
