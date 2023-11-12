@@ -18,7 +18,7 @@ export const Header = () => {
   const { xs } = useCustomMediaQuery()
 
   return (
-    <AppShell.Header pos='sticky'>
+    <AppShell.Header pos='fixed'>
       <Container size='lg'>
         <Flex w='100%' gap='md' justify='space-between' align='center'>
           <Box w={'max-content'}>

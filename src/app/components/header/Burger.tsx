@@ -25,7 +25,7 @@ export const Burger = () => {
         <MantineBurger opened={opened} aria-label='Toggle navigation' />
       </Menu.Target>
 
-      <Menu.Dropdown>
+      <Menu.Dropdown onClickCapture={toggle}>
         <Links Overlay={MenuItem} />
 
         <ActionTheme />
