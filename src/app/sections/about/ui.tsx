@@ -10,7 +10,7 @@ export const About = () => {
       direction={{ base: 'column', md: 'row' }}
     >
       <Text maw={{ base: '80%', md: '450px' }} miw='290px'>
-        Hi, I'm Behruz! I studied <Mark color='blue'>Full Stack </Mark> at the{' '}
+        Hi, I'm Behruz! I studied <Mark color='blue'>Full Stack</Mark> at the{' '}
         <Anchor href='https://proweb.uz' target='_blank'>
           Proweb.uz
         </Anchor>{' '}
@@ -25,8 +25,9 @@ export const About = () => {
         </Anchor>{' '}
         as a Frontend Developer Junior.
         <br />
-        <br />I enjoy creating scalable & elegant web/mobile applications that
-        have a real world impact. I'm always learning new technologies, either
+        <br />
+        I enjoy creating scalable & elegant web/mobile applications that
+        have a real-world impact. I'm always learning new technologies, either
         through{' '}
         <Anchor
           href='https://devpost.com/whitestar06102005'
@@ -37,6 +38,7 @@ export const About = () => {
         </Anchor>{' '}
         or self-study.
       </Text>
+
       <Image
         ml={0}
         radius='xs'

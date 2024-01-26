@@ -19,7 +19,7 @@ export const SectionContainer = ScrollElement(({ title, styles, animationReverse
     },
     to: {
       x: 0,
-      duration: 2,
+      duration: 1,
       ease: "back",
     }
   })

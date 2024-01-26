@@ -10,7 +10,7 @@ export const Contact = () => {
         </Text>
         <Button
           component='a'
-          href='mailto:whitestar06102005@gmail.com'
+          href='mailto:behruz.baxtiyorov.dev@gmail.com'
           variant='gradient'
           w='max-content'
           leftSection={<IconMail />}

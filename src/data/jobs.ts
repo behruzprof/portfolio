@@ -4,8 +4,10 @@ export const JOBS = [
     position: 'Junior Frontend Coworker',
     duration: ['Feb 2023 - March 2023'],
     description: [
-      'Helped students who had just started their careers',
-      'The most recent and very basic knowledge'
+      'Development of internal services for the educational center.',
+      'Development of an SPA application for the educational center.',
+      'Configuration of analytics and SEO optimization.',
+      'Mentoring and overseeing the coworking area.'
     ],
     url: 'https://proweb.uz/'
   },
@@ -14,10 +16,10 @@ export const JOBS = [
     position: 'Junior Frontend Developer',
     duration: ['March 2023 - July 2023'],
     description: [
-      'Designed the Bictory.domain website',
-      'Integrated with the backend and improved the interface',
-      'Designed the xnames-landing-dapp website'
+      'Developed various SPA and SSR applications',
+      'Designed application architectures',
+      'Participated in technical interviews'
     ],
     url: 'https://bictory.io'
-  },
+  }
 ]

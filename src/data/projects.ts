@@ -22,7 +22,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'Bictory.domains',
     description:
-      'Bictory Domains is a distributed, secure, and extensible naming system for Web3, based on the L1 and L2 blockchains. Bictory Domains empowers users to map human-readable names to blockchain identities and resources such as Multiversx addresses and identities, IPFS hashes, texts, socials, web URLs and so much more.',
+      'Bictory Domains is a distributed, secure, and extensible naming system for Web3, built on the foundation of both L1 and L2 blockchains. Bictory Domains empowers users to associate human-readable names with blockchain identities and various resources, including Multiversx addresses, IPFS hashes, texts, social media profiles, web URLs, and much more.',
     pic: '/projects-img/project-1.png',
     tech: ['Nextjs', 'Fsd Architecture', 'MUI library'],
     links: [
@@ -34,28 +34,28 @@ export const PROJECTS: Project[] = [
       {
         label: 'Github',
         icon: 'github',
-        url: 'https://github.com/behruzprof/bictory.domains'
+        url: 'https://github.com/behruzdev71/Bictory-Projects'
       }
     ]
   },
   {
     name: 'X-NAMES-LANDING-DAPP',
     description:
-      'xNames are a necessary resource to fully decentralize your website. Link the wallet name to your decentrally hosted website to resist censorship. All Dapps across the MultiversX, your xNames serves as the user and screen names for more dapp usability.',
+      "xNames are a necessary resource to fully decentralize your website. Link the wallet name to your decentrally hosted website to resist censorship. Across the MultiversX, all Dapps utilize your xNames as user and screen names for enhanced usability.",
     pic: '/projects-img/project-2.png',
     tech: ['React', 'Vite', 'MUI library'],
     links: [
       {
         label: 'Github',
         icon: 'github',
-        url: 'https://github.com/behruzprof/x-names-landing-dapp'
+        url: 'https://github.com/behruzdev71/Bictory-Projects'
       }
     ]
   },
   {
     name: 'Bictory NFT',
     description:
-      'Our NFT marketplace project is built on the permissionless L1 Concordium blockchain which is fitted with a zK ID-layer, offering a unique opportunity for privacy and at the same time accountability for individuals and businesses looking to enter the rapidly growing NFT market.',
+      'Our NFT marketplace project is constructed on the permissionless L1 Concordium blockchain, equipped with a zK ID-layer. This provides a distinctive opportunity for privacy while maintaining accountability for individuals and businesses aiming to enter the rapidly growing NFT market.',
     pic: '/projects-img/project-3.png',
     tech: ['React', 'TypeScript', 'i18next', 'gsap'],
     links: [
@@ -67,7 +67,7 @@ export const PROJECTS: Project[] = [
       {
         label: 'Github',
         icon: 'github',
-        url: 'https://github.com/behruzprof/bictory-nft'
+        url: 'https://github.com/behruzdev71/Bictory-Projects'
       },
       {
         label: 'Demo',
@@ -91,7 +91,7 @@ export const PROJECTS: Project[] = [
       {
         label: 'Github',
         icon: 'github',
-        url: 'https://github.com/behruzprof/bictory-cns'
+        url: 'https://github.com/behruzdev71/Bictory-Projects'
       }
     ]
   }

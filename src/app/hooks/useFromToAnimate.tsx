@@ -18,7 +18,7 @@ const defaultAnimate: IUseFromToAnimate = {
     y: 0,
     opacity: 1,
     stagger: 0.05,
-    duration: 1.5,
+    duration: 1,
     ease: 'power4.out',
   },
   defAnimate: true

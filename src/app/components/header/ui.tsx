@@ -23,7 +23,7 @@ export const Header = () => {
         <Flex w='100%' gap='md' justify='space-between' align='center'>
           <Box w={'max-content'}>
             <NavLink
-              label={<Text c={'#4299e1'} fw={700} children='BehruzProf' />}
+              label={<Text c={'#4299e1'} fw={700} children='BehruzDev71' />}
               href='/'
               rightSection={
                 <IconCode size={'1rem'} stroke={1.5} color='#4299e1' />

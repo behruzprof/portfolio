@@ -46,8 +46,7 @@ export const Landing = () => {
             }}
             ref={titleRef}
           >
-            Hi, I'm Behruz Bakhtiyorov, a{' '}
-            <Mark color='blue'>Frontend developer.</Mark>
+            Hi, I'm <Mark color='blue'>Frontend Developer.</Mark>
           </Title>
           <Text
             ref={textRef}
