@@ -4,12 +4,12 @@ export const About = () => {
   return (
     <Flex
       w='100%'
-      justify='space-between'
+      justify='center'
       align='center'
       gap='sm'
       direction={{ base: 'column', md: 'row' }}
     >
-      <Text maw={{ base: '80%', md: '450px' }} miw='290px'>
+      <Text maw={{ base: '80%', md: '70%'}} miw='290px'>
         Hi, I'm Behruz! I studied <Mark color='blue'>Full Stack</Mark> at the{' '}
         <Anchor href='https://proweb.uz' target='_blank'>
           Proweb.uz
